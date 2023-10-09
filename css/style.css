@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&family=Poppins:ital,wght@0,400;0,600;1,100;1,200&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    font-family:poppins;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+:root{
+    --main-color: white;
+    --secondry-color:cyan;
+}
+h1{
+    color:var(--main-color);
+}
+h3{
+    color:var(--main-color);
+}
+h4{
+    color:var(--main-color);
+}
+p{
+    color:var(--main-color);
+}
+a{
+color: var(--main-color);
+}
+button{
+    color: var(--main-color);
+    background-color: transparent;
+    border-color: transparent;
+    font-weight: 700;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+body{
+    background-image: url(/imgs/pexels-stijn-dijkstra-3265460.jpg);
+    background-repeat:no-repeat ;
+    background-size:cover;
+}
+.container{
+    padding: 0 15px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+@media (min-width:768px) {
+    .container{
+        width: 750px;
+        }
+    }   
+    @media (min-width:992px) {
+        .container{
+        width: 970px;
+    }
+    }
+    @media (min-width:1200px) {
+        .container{
+        width: 1170px;
+            }
+    }
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    height: 85px;
+    padding: 0 15px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu i{
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    float:right;
+    display: none;
+}
+.check{
+    display: none;
+}
+@media  screen and (max-width:990px) {
+    .menu i{
+        display: block;
+        padding: 0 15px ;
+    }
+    header ul{
+        width: 60%;
+        height: fit-content;
+        position: fixed;
+        top: 67px;
+        left: -100%;
+        backdrop-filter: blur(5px);
+        flex-direction: column;
+        transition: 0.4s;
+    }
+    header ul li{
+    padding: 25px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    }
+    header ul.show {
+    left:0;
+    }
+}
+header ul li{
+    margin-right: 40px;
+    font-size: 18px;
+}
+header ul li a{
+    transition: 0.3s;
+    font-weight: 600;    
+}
+header ul li a:hover{
+    color:var(--secondry-color);
+}
+header button{
+    padding: 5px 10px;
+    font-size: 18px;
+}
+header button:hover{
+    color: var(--secondry-color);
+    border-color:var(--secondry-color);
+}
+.landing {
+    height: calc(100vh - 85px);
+    position: relative;
+}
+.landing .land {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    width:100%
+}
+.land h1{
+    font-size: 90px;
+    letter-spacing: 4px;
+}
+.land p{
+    font-size: 40px;
+    margin-left: 100px;
+}
+.land input{
+    margin-top: 20px;
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 18px;
+    opacity: 70%;
+    color: black;
+    font-style: oblique;
+    border: transparent;
+    font-weight: 600;
+    border-radius: 5px;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    justify-content: center;
+    align-items: center;
+}
+.closer img{
+    width: 250px;
+    min-width: -webkit-fill-available;
+    border-radius: 5px;
+}
+.closer h1 {
+    font-size: 25px;
+    margin: 5px;
+    text-align: center;
+}
+.closer p{
+    font-size: 17px;
+    width: 85%;
+    margin: 5px 15px;
+}
+.closer button{
+    padding: 5px 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    float: right;
+}
+.closer button:hover{
+    color: var(--secondry-color);
+    border-color: var(--secondry-color);
+}
+.mount img{
+    width: 250px;
+    min-width: -webkit-fill-available;
+    border-radius: 5px;
+}
+.mount h1 {
+    font-size: 25px;
+    margin: 5px;
+    text-align: center;
+}
+.mount p{
+    font-size: 17px;
+    width: 85%;
+    margin: 5px 15px;
+}
+.mount button{
+    padding: 5px 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    float: right;
+}
+.mount button:hover{
+    color: var(--secondry-color);
+    border-color: var(--secondry-color);
+}
+.section2{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    position: relative;
+    grid-gap: 30px;
+}
+.motherNature{
+    height: 100%;
+    position: relative;
+}
+.motherNature  img{
+height: 500px;
+width: 100%;
+}
+.motherNature  h3{
+    text-align: center;
+}
+.motherNature  h1{
+    margin: 5px 0;
+    text-align: center;
+}
+.motherNature  p{
+    margin: 10px 30px;
+}
+.motherNature  button{
+    padding: 5px 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    float: right;
+}
+.motherNature  button:hover{
+    color: var(--secondry-color);
+    border-color: var(--secondry-color);
+}
+.section2 .road img{
+    width:100%
+}
+.section2 .road h3{
+    text-align: center;
+}
+.section2 .road h1{
+    margin-top: 10px;
+    text-align: center;
+}
+.section2 .road p{
+    margin-left: 10px;
+    width: 85%;
+    margin: 10px 15px;
+}
+.section2 .road button{
+    padding: 5px 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    float: right;
+}
+.section2 .road button:hover{
+    color: var(--secondry-color);
+    border-color: var(--secondry-color);
+}
+.section2 .active{
+    height: 100%;
+    position: relative;
+}
+.active img{
+    height: 500px;
+    width: 100%;
+}
+.active h3{
+    text-align: center;
+}
+.active h1{
+    margin: 5px 0;
+    text-align: center;
+}
+.active p{
+    margin: 10px 0;
+    text-align: center;
+}
+.active button{
+    align-items: center;
+    padding: 5px 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    float: right;
+}
+.active button:hover{
+    color: var(--secondry-color);
+    border-color: var(--secondry-color);
+}
+.testim{
+    display: flex;
+    position: relative;
+    padding: 50px 0;
+}
+.testim .hh h1 {
+    text-align: center;
+}
+.testim .hh h4 {
+    text-align: center;
+    padding: 10px 0; 
+}
+.testim .hh p {
+    float: right;
+    width: 70%;
+}
+.testim .sara img{
+    position: absolute;
+    border-radius: 5px;
+    width: 170px;
+    height: 80%;
+    left: 15px;
+    top: 15px;
+    opacity: 60%;
+}
+.popular .hp {
+    color: var(--main-color);
+    text-align: center;
+    padding: 10px 0;
+}
+.popular .countries{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--main-color);
+    padding: 15px 0px;
+}
+.popular .countries h1{
+    padding: 10px 0;
+}
+.popular .countries .city1{
+    border:1px solid var(--main-color);
+    padding: 8px 0;
+    border-radius: 5px;
+}
+.popular .countries .city2{
+    border:1px solid var(--main-color);
+    padding: 8px 0;
+    border-radius: 5px;
+}
+.popular .countries .city3{
+    border:1px solid var(--main-color);
+    padding: 8px 0;
+    border-radius: 5px;
+}
+.popular .countries .city4{
+    border:1px solid var(--main-color);
+    padding: 8px 0;
+    border-radius: 5px;
+}
+.sub{
+    display: flex;
+    justify-content: space-evenly;
+    height: 200px;
+    align-items: center;
+    color: var(--main-color);
+}
+.sub .textsub h3{
+    margin-left: 25px;
+}
+.sub button{
+    height: 35px;
+    width: 200px;
+    align-items: center;
+    font-size: 22px;
+}
+.sub button:hover{
+    color: var(--secondry-color);
+    border-color: var(--secondry-color);
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+}
+.footer .iconns a{
+    padding-left: 18px;
+    transition: 0.3s;
+}
+.footer a :hover{
+    color: var(--secondry-color);
+}
+.footer .terms ul li {
+    display: inline;
+    padding: 18px;
+}
+.footer .terms ul li a{
+    transition: 0.3s;
+}
+.footer .terms ul li :hover{
+    color: var(--secondry-color);
+}
